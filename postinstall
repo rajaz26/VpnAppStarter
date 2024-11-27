@@ -1,0 +1,8 @@
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    cd ios 
+    pod install 
+    cd ..
+fi
+
+node ./moduleResolver.js
+node ./env.config/env.config.js
